@@ -1,50 +1,33 @@
-# React + TypeScript + Vite
+# VeggieGood
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**VeggieGood** is the first version of a monitoring system for variables in a hydroponic farm. The application allows visualization and management of temperature and humidity sensor data obtained via Amazon OpenSearch. It is built using **Vite** as the bundler, **TypeScript** with **SWC** for compilation, and **Tailwind CSS** for styling. **React Icons** is used for iconography, and **Recharts** is utilized for data visualization.
+![Dashboard Overwiew](src/assets/screendash.png)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Technologies Used
 
-## Expanding the ESLint configuration
+- **Vite**: A fast and efficient bundler for modern web applications. Learn more in the [official documentation](https://vitejs.dev/).
+- **TypeScript**: A superset of JavaScript that adds static typing. For details, visit the [TypeScript documentation](https://www.typescriptlang.org/).
+- **SWC**: A super-fast JavaScript and TypeScript compiler. More information is available in the [GitHub repository](https://github.com/swc-project/swc).
+- **Tailwind CSS**: A utility-first CSS framework for creating rapid and customizable designs. Check out the [Tailwind CSS documentation](https://tailwindcss.com/docs) for setup and usage.
+- **React Icons**: A library providing a wide range of SVG icons for use in React projects. Visit the [React Icons documentation](https://react-icons.github.io/react-icons/) for usage and customization.
+- **Recharts**: A chart library based on React for creating interactive and customizable charts. See the [Recharts documentation](https://recharts.org/en-US) for details on creating and configuring charts.
+- **Amazon OpenSearch**: The data is ingested from Amazon OpenSearch, a real-time search and analytics service. For more information, refer to the [Amazon OpenSearch documentation](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is-amazon-opensearch-service.html).
+![OpenSearch Overwiew](src/assets/opensearch.png)
+## Project Structure
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The project follows this structure:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+```bash
+.
+├── public              # Static files
+├── src
+│   ├── components      # Application components
+│   ├── pages           # Main pages
+│   ├── styles          # Global styles
+│   ├── App.tsx         # Main component
+│   └── main.tsx        # Application entry point
+├── tailwind.config.js  # Tailwind CSS configuration
+├── tsconfig.json       # TypeScript configuration
+├── vite.config.ts      # Vite configuration
+└── package.json        # Dependencies and scripts
