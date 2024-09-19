@@ -13,7 +13,9 @@
 - **React Icons**: A library providing a wide range of SVG icons for use in React projects. Visit the [React Icons documentation](https://react-icons.github.io/react-icons/) for usage and customization.
 - **Recharts**: A chart library based on React for creating interactive and customizable charts. See the [Recharts documentation](https://recharts.org/en-US) for details on creating and configuring charts.
 - **Amazon OpenSearch**: The data is ingested from Amazon OpenSearch, a real-time search and analytics service. For more information, refer to the [Amazon OpenSearch documentation](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/what-is-amazon-opensearch-service.html).
+
 ![OpenSearch Overwiew](src/assets/opensearch.png)
+
 ## Project Structure
 
 The project follows this structure:
