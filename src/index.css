@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+ 
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+h1 {
+  @apply text-2xl md:text-2xl font-bold tracking-tight text-grayblack ;
+}
+
+h2 {
+  @apply text-xl md:text-xl font-semibold tracking-tight text-grayblack  ;
+}
+
+h3 {
+  @apply text-lg md:text-lg font-medium tracking-tight text-grayblack  ;
+}
+
+h4 {
+  @apply text-base md:text-base font-normal tracking-tight text-grayblack  ;
+}
+
+#root{
+  font-family: "DM Sans" !important;
+ ;
+  
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
